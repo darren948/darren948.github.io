@@ -236,12 +236,6 @@ var typed = new Typed(".typing", {
   backSpeed: 60,
   loop: true
 });
-var typed = new Typed(".styling", {
-  strings: [ "Student!", "Beginner!"],
-  typeSpeed: 100,
-  backSpeed: 60,
-  loop: true
-});
 
 //About Accordion
 //accordion dropdown about

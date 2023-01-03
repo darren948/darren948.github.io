@@ -434,38 +434,31 @@ margin-right: 0;
 }
 .home .home-content .text-1{
   font-family: 'Poppins', sans-serif;
-  display: flex;
-  justify-content: center;
-  font-size: 45px;
+  font-size: 35px;
   margin-top: 250px;
 }
 .home .home-content .text-2{
   font-family: 'Poppins', sans-serif;
-  display: flex;
-  justify-content: center;
-  font-size: 50px;
+  font-size: 40px;
 }
 .home .home-content .text-2 span{
   font-family: 'Poppins', sans-serif;
-  margin-top: -4px;
-  display: flex;
-  justify-content: center;
   background-image: linear-gradient(#8400ff,rgb(62, 0, 121),darkviolet);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 55px;
+  font-size: 50px;
   font-weight: 600;
 }
 @media screen and (max-width: 768px) {
  .home .home-content .text-1{
-  font-size: 23px;
+  font-size: 15px;
   margin-top: 230px;
  }
  .home .home-content .text-2{
-  font-size: 25px;
+  font-size: 20px;
  }
  .home .home-content .text-2 span{
-  font-size: 30px;
+  font-size: 25px;
  }
 }
 /*2nd slide*/
@@ -501,21 +494,6 @@ h2.title{
 	 color: rgba(255, 255, 255, 0.5);
 	 margin-bottom: 5px;
 }
- .hero-slider .carousel-cell .inner .title {
-   font-family: 'Poppins', sans-serif;
-	 font-size: 1.8rem;
-	 line-height: 1.2em;
-	 letter-spacing: 3px;
-	 margin-bottom: 40px;
-   font-weight: 900;
-}
-.inner span{
-  font-size: 2.5rem;
-  font-weight: bolder;
-  background-image: linear-gradient(#8400ff,rgb(62, 0, 121),darkviolet);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
  .hero-slider .carousel-cell .inner .btn {
 	 border: 1px solid #fff;
 	 padding: 14px 18px;
@@ -544,18 +522,6 @@ h2.title{
 }
  .hero-slider .flickity-page-dots {
 	 bottom: 30px;
-}
- .hero-slider .flickity-page-dots .dot {
-	 width: 30px;
-	 height: 4px;
-	 opacity: 1;
-	 background: rgba(255, 255, 255, 0.5);
-	 border: 0 solid white;
-	 border-radius: 0;
-}
- .hero-slider .flickity-page-dots .dot.is-selected {
-	 background: rgb(88, 0, 252);
-	 border: 0 solid #f00;
 }
 /* 3rd slide*/
 #moving-div {
@@ -691,7 +657,7 @@ h2.title{
   margin-left: 0px;
   margin-top: -2px;
   font-weight: 200;
-  font-size: 20px;
+  font-size: 18px;
 }
 .ustp:hover{
   transition: all 0.4s ease;  
@@ -702,7 +668,7 @@ h2.title{
 }
 .text{
   color: black;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bolder;
   margin-bottom: 10px;
 }
@@ -741,27 +707,35 @@ section {
   align-items: center;
   justify-content: space-between;
 }
-.about .about-content .left{
-  width: 45%;
+.features .image {
+  background: url("/assets/images/kanek.jpg") center center no-repeat;
+  background-size: cover;
+  min-height: 400px;
+  margin-top: 30px;
 }
-.about .about-content .left img{
-  margin-top: 50px;
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  background: #00000036;
-  box-shadow: 5px 5px 5px #0000004d, 5px 5px 5prgba(0, 0, 0, 0.199)00;
-}
-@media screen and (max-width: 768px) {
-  .about .about-content .left img{
-    width: 320px;
+@media (max-width: 991px) {
+  .features .image {
+    text-align: center;
+    width: 97%;
   }
-}
-@media screen and (max-width: 358px) {
-  .about .about-content .left img{
-    width: 280px;
+
+  .features .image img {
+    max-width: 75%;
   }
+  .accordion {
+    margin-top: 30px;
+    }
 }
+
+@media (max-width: 667px) {
+  .features .image img {
+    max-width: 100%;
+  }
+  .accordion {
+    margin-top: 30px;
+    }
+}
+
 
 /*About Accordion*/
 .mbti{
@@ -822,7 +796,7 @@ animation: hoverScale 0.3s forwards;
 }
 .accordion {
 overflow: hidden;
-margin-top: -20px;
+width: 100%;
 }
 
 .accordion-item {
@@ -835,7 +809,6 @@ border: none;
 outline: none;
 font-size: 15px;
 transition: 0.4s;
-margin-top: 1px;
 font-family: 'Poppins', sans-serif;
 text-transform: uppercase;
 }
