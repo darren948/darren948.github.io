@@ -419,19 +419,12 @@ nav input{
 .home{
   display: flex;
   background: url("/assets/images/plnet.gif") no-repeat center;
-  height: 700px;
   color: #ffffff;
-  background-size: cover;
+  height: 105vh;
   background-attachment: scroll;
   font-family: 'Poppins', sans-serif;
 }
-.home .max-width{
-  width: 100%;
-  display: flex;
-}
-.home .max-width .row{
-margin-right: 0;
-}
+
 .home .home-content .text-1{
   font-family: 'Poppins', sans-serif;
   font-size: 35px;
@@ -710,6 +703,7 @@ section {
 .features .image {
   background: url("/assets/images/kanek.jpg") center center no-repeat;
   background-size: cover;
+  height: 550px;
   min-height: 400px;
   margin-top: 30px;
 }
@@ -1511,7 +1505,7 @@ h2.name{
 }
 
 .counts .image {
-  background: url("/assets/images/nerd.png") center center no-repeat;
+  background: url("/assets/images/tg ken.jpg") center center no-repeat;
   background-size: cover;
   min-height: 400px;
   margin-top: 30px;
