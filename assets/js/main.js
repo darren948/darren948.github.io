@@ -230,8 +230,14 @@ flkty.on('scroll', function () {
   });
 });
 //Home text slide
-var typed = new Typed(".typing", {
-  strings: [ "Website!", "Portfolio!"],
+var typed = new Typed(".styling", {
+  strings: [ "Website", "Portfolio"],
+  typeSpeed: 100,
+  backSpeed: 60,
+  loop: true
+});
+var typed = new Typed(".texting", {
+  strings: [ "Beginner", "Student"],
   typeSpeed: 100,
   backSpeed: 60,
   loop: true
