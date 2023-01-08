@@ -231,7 +231,7 @@ flkty.on('scroll', function () {
 });
 //Home text slide
 var typed = new Typed(".styling", {
-  strings: [ "Website", "Portfolio"],
+  strings: [ "Website!", "Portfolio!"],
   typeSpeed: 100,
   backSpeed: 60,
   loop: true
