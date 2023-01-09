@@ -16,6 +16,11 @@
     #carouselExampleIndicators .carousel-inner{
         position: relative;
     }
+    #carouselExampleIndicators{
+        position: relative;
+        height: 100vh;
+        width: 100%;
+    }
 }
 #carouselExampleIndicators .carousel-inner:before{
 	position: absolute;
