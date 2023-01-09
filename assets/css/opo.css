@@ -144,6 +144,11 @@ p.sh{
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
   }
+  h2.name{
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+  }
   .skill-content {
     margin-top: 10px;
     background-image: linear-gradient(to right, #3b0088,#7700ff, #3b0088);
@@ -209,3 +214,4 @@ p.po{
     color: white;
     margin-bottom: 0;
   }
+  
