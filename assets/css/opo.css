@@ -1,9 +1,9 @@
 /*google font*/
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,700,800,900&display=swap');
-/*slider*/
+/*About slider*/
 #carouselExampleIndicators{
 	position: relative;
-	height: 100vh;
+	height: 500px;
 	width: 100%;
 }
 #carouselExampleIndicators .carousel-inner{
@@ -15,7 +15,6 @@
 @media (max-width: 600px) {
     #carouselExampleIndicators .carousel-inner{
         position: relative;
-        height: 50%;
     }
 }
 #carouselExampleIndicators .carousel-inner:before{
@@ -92,5 +91,116 @@
 p.sh{
     color: rgb(119, 0, 255);
     font-weight: 700;
-    font-size: clamp(0.625rem, 0.338rem + 1.2245vw, 1.5625rem);
+    font-size: clamp(1.25rem, 1.0587rem + 0.8163vw, 1.875rem);
 }
+
+/*
+# Skills*/
+.skillp {
+    margin: 0;
+    margin: 0;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    color: #ffffff;
+  }
+  @media (max-width: 991px) {
+    .skillp {
+      font-size: 35px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .skillp{
+      font-size: 30px;
+    }
+  }
+  .skill .hh{
+    color: white;
+    font-family: "Raleway", sans-serif;
+    font-size: calc(1.325rem + .9vw);
+  }
+  .skill{
+    background: url(/assets/images/dd.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+  }
+  /* skills section styling */
+  .skill h2{
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+  }
+  .skill-content {
+    margin-top: 10px;
+    background-image: linear-gradient(to right, #3b0088,#7700ff, #3b0088);
+    padding: 20px;
+    height: 50%;
+    margin-bottom: -100px;
+  }
+/*--------------------------------------------------------------
+# Skills
+--------------------------------------------------------------*/
+p.po{
+    color: white;
+    font-weight: 700;
+    font-size: clamp(1.25rem, 1.0587rem + 0.8163vw, 1.875rem);
+    margin-bottom: 40px;
+}
+.services .icon-box {
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 0 10px 40px 10px;
+    background: rgb(0, 0, 0);
+    box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .services .icon-box:hover {
+    transform: translateY(-5px);
+  }
+  
+  .services .icon {
+    position: absolute;
+    left: -20px;
+    top: calc(50% - 30px);
+  }
+  
+  .services .icon i {
+    font-size: 64px;
+    line-height: 1;
+    transition: 0.5s;
+  }
+  
+  .services .title {
+    margin-left: 40px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
+  
+  .services .title a {
+    color: rgb(255, 255, 255);
+  }
+  
+  .services .icon-box:hover .title a {
+    color: rgb(119, 0, 255);
+  }
+  
+  .services .description {
+    font-size: 14px;
+    margin-left: 40px;
+    line-height: 24px;
+    color: white;
+    margin-bottom: 0;
+  }

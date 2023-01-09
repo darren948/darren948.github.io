@@ -34,6 +34,8 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <!-- style.css -->
+	<link rel="stylesheet" type="text/css" href="/assets/css/opo.css"/>
 	<!-- jquery cdn -->
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.js"></script>
 
@@ -61,7 +63,15 @@
         <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
         <li><a href="index.html"> Home</a></li>
         <li><a href="about.html"> About</a></li>
-        <li><a href="skills.html"> Skills</a></li>
+        <li>
+          <a href="skills.html" class="desktop-item"> Skills <i class="fa-solid fa-square-caret-down"></i></a>
+          <input type="checkbox" id="showDrop">
+          <label for="showDrop" class="mobile-item"> Skills <i class="fa-solid fa-square-caret-down"></i></label>
+          <ul class="drop-menu">
+            <li><a href="#skill">Progress Bar</a></li>
+            <li><a href="#bar"> Skills Slide</a></li>
+          </ul>
+        </li>
         <li>
           <a href="#project" class="desktop-item">Projects <i class="fa-solid fa-square-caret-down"></i></a>
           <input type="checkbox" id="showMega">
@@ -94,77 +104,49 @@
       <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
     </div>
   </nav><!--End Navbar-->
-
-  <!--Home Section-->
-  <section class="home" id="home">
-
-    <div class="hero-slider" data-carousel>
-      <div class="carousel-cell" style="background-image: url(/assets/images/planets.jpg);">
-        <div class="inner">
-          <div class="container" data-aos="zoom-in">
-          <h2>Hello everyone! I am Darren and</h2>
-          <h2>This is my <span class="styling"></span></h1>
-        </div>
-      </div>
-    </div>
-
-      <div class="carousel-cell" style="background-image: url(/assets/images/dark.png);">
-        <div class="inner">
-          <h2>I am a <span class="texting"></span></h1>
-          <a href="#" class="btn">Explore</a>
-        </div>
-      </div>
-
-      <div class="carousel-cell" style="background-image: url(/assets/images/wwa.jpg);">
-        <div class="inner">
-          
-        </div>
-      </div>
-    </div>
-    
-    
 </section><!--End Home Section-->
 
   <main id="main">
 
-    <!--About Section-->
-    <section id="about" class="about">
-      <div class="container" data-aos="fade-up">
-
-        <div class="row">
-          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
-            <img src="assets/images/darren.jpg" class="imgfluid" alt="">
-          </div>
-          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
-            <div class="about-h1">
-              <span class="text2">A</span>
-              <span class="text2">B</span>
-              <span class="text2">O</span>
-              <span class="text2">U</span>
-              <span class="text2">T</span>
-              <span class="text2"> </span>
-              <span class="text2">M</span>
-              <span class="text2">E</span>
-            </div>
-              <div class="column right">
-                <div class="text">I'm <span>Darren Louis S. Uyangurin</span> a student at  <a class="ustp" href="https://www.ustp.edu.ph/">USTP</a></div>
-                <p>I am  19 years old and I lived in Macasandig Cagayan De Oro City. I love playing online games, watching tv shows and reading stuff that can help me improve my self and
-                    expand my knowledge. I also love contemplating about the 
-                    future, thinking what's the best for me and imagine things that isn't impossible to achieve. 
-          I'm also not the type of person who seek for social interactions because I prefer to spend my time alone or with a small group of friends. I enjoy my solitude and find it to be a source of strength and creativity because I am able to think deeply about things and come up with ideas that I might not have if I was surrounded by others. However, I will admit that I'm a bit of a weirdo. I have a tendency to get lost in my own thoughts and may come across as a bit strange to others because I talk about things that they don't like or may not understand. But I have my own unique qualities and talents that make me special.
-            </p>
-          </div>
-        </div>
-      </div>
-  </section><!--End About Section-->
-
     <!--SKills Section-->
-    <section id="skills" class="skills">
+    <section id="skill" class="skill">
       <div class="container" data-aos="fade-up">
-        <div class="skillsp">
+        <div class="skillp">
+            <br>     
           <p>Check My Skills</p>
+          </div>
+          <div class="container" data-aos="zoom-up">
+          <div class="skill-content">
+          <h2>HTML (50%)</h2>
+          <div class="progress-bar">
+              <div class="html"></div>
+          </div>
+          <h2>CSS (30%)</h2>
+          <div class="progress-bar">
+              <div class="css"></div>
+          </div>
+          <h2>Javascript (10%)</h2>
+          <div class="progress-bar">
+              <div class="js"></div>
+          </div>
+          <h2>Computer (70%)</h2>
+          <div class="progress-bar">
+              <div class="computer"></div>
+          </div>
+          <h2>Editing (60%)</h2>
+          <div class="progress-bar" id="bar">
+              <div class="edit"></div>
+          </div>
+          <h2>Chess (70%)</h2>
+          <div class="progress-bar" >
+              <div class="chess"></div>
+          </div>
         </div>
-        <div class="divbody">
+        </div>
+        </div>
+        <section>
+
+        <div class="divbody" data-aos="fade-up">
           <div class="slide-container swiper" data-aos="fade-up">
               <div class="slide-content">
                   <div class="card-wrapper swiper-wrapper">
@@ -269,190 +251,58 @@
                       <div class="swiper-pagination"></div>
                     </div>
                 </div>
-    </section><!-- End Skills Section -->
+    </section>
 
-    <!-- Projects Section ======= -->
-    <section id="project" class="portfolio">
-      <div class="container" data-aos="fade-up">
-
-        <div class="projectsp">
-          <p>Check My Projects</p>
-        </div>
-
-        <div class="row" data-aos="fade-up" data-aos-delay="100">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">Website</li>
-              <li data-filter=".filter-card">Tv Shows</li>
-              <li data-filter=".filter-web">Facebook</li>
-            </ul>
+    <!-- ======= Services Section ======= -->
+    <section class="services section-bg">
+        <div class="container">
+          <div class=""></div>
+          <div class="section-title" data-aos="fade-up">
+            <p class="po">These are my Hobbies.</p>
           </div>
-        </div>
-
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="/assets/images/pro1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Website Code</h4>
-                <p>I made this website but this is just a draft.</p>
-                <div class="portfolio-links">
-                  <a href="/assets/images/pro1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
-                  <a href="https://darren1234x.github.io/" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
+  
+          <div class="row" data-aos="fade-up">
+            <div class="col-lg-4 col-md-6">
+              <div class="icon-box">
+                <div class="icon"><i class="fa-solid fa-pen-ruler" style="color: #fbff00;"></i></div>
+                <h4 class="title"><a href="https://www.autodraw.com/">Drawing</a></h4>
+                <p class="description">Drawing was one of my hobbies that's why I considered it as my skill, especially when I was younger.</p>
               </div>
             </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/images/fb.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Fb Code</h4>
-                <p>I Created this Fb code when I was in Shs.</p>
-                <div class="portfolio-links">
-                  <a href="assets/images/fb.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
-                  <a href="https://darren948.github.io/fbdarren/" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="icon-box">
+                <div class="icon"><i class="fa-solid fa-basketball" style="color: #f8b600;"></i></div>
+                <h4 class="title"><a href="https://nba.smart.com.ph/?gr=www">Basketball</a></h4>
+                <p class="description">It is also one of my skills since I know how to play. I used to play basketball with my friends when I was a kid.</p>
               </div>
             </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/images/tv.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>TV Shows Code</h4>
-                <p>I created this so that I could share my favorite shows</p>
-                <div class="portfolio-links">
-                  <a href="assets/images/tv.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
-                  <a href="https://darren948.github.io/shows/" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
+  
+            <div class="col-lg-4 col-md-6" data-wow-delay="0.1s">
+              <div class="icon-box">
+                <div class="icon"><i class="fa-solid fa-gamepad" style="color: #3fcdc7;"></i></div>
+                <h4 class="title"><a href="https://play.google.com/store/games?hl=en&gl=US">Games</a></h4>
+                <p class="description">I love playing online games with my friends on the internet. I spend a lot of my time playing games just to enjoy myself.</p>
               </div>
             </div>
-          </div>
-
-        </div>
-
-      </div>
-
-    <!--Counts Section-->
-    <div id="counts" class="counts">
-      <div class="container" data-aos="fade-up">
-
-        <div class="row no-gutters">
-          <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start" data-aos="fade-right" data-aos-delay="100"></div>
-          <div class="col-xl-7 ps-0 ps-lg-5 pe-lg-1 d-flex align-items-stretch" data-aos="fade-left" data-aos-delay="100">
-            <div class="content d-flex flex-column justify-content-center">
-              <h3>My Overall experience in creating my projects.</h3>
-              <p>
-                I spend a lot of time creating my projects and it has given me mixed emotions. However, there's still a lot that I don't understand.
-              </p>
-              <div class="row">
-                <div class="col-md-6 d-md-flex align-items-md-stretch">
-                  <div class="count-box">
-                    <i class="bi bi-emoji-smile"></i>
-                    <span data-purecounter-start="0" data-purecounter-end="65" data-purecounter-duration="2" class="purecounter"></span>
-                    <p><strong> over 100</strong> is how I rate my happiness during the time I started creating my projects. </p>
-                  </div>
-                </div>
-
-                <div class="col-md-6 d-md-flex align-items-md-stretch">
-                  <div class="count-box">
-                    <i class="bi bi-journal-richtext"></i>
-                    <span data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="2" class="purecounter"></span>
-                    <p><strong>Projects.</strong> If I consider the code that I made in senior high school, I will get a total of 4 projects.</p>
-                  </div>
-                </div>
-
-                <div class="col-md-6 d-md-flex align-items-md-stretch">
-                  <div class="count-box">
-                    <i class="bi bi-clock"></i>
-                    <span data-purecounter-start="0" data-purecounter-end="6" data-purecounter-duration="4" class="purecounter"></span>
-                    <p><strong>Hours</strong> is the amount of time that I think I spend on each projects.</p>
-                  </div>
-                </div>
-                </div>
+            <div class="col-lg-4 col-md-6" data-wow-delay="0.1s">
+              <div class="icon-box">
+                <div class="icon"><i class="fa-solid fa-book" style="color:#c00d00;"></i></div>
+                <h4 class="title"><a href="https://z-lib.is/">Reading Books</a></h4>
+                <p class="description">Reading books was also one of my hobbies. I read books/pdf in order to enhance my knowledge and vocabulary.</p>
               </div>
-            </div><!---->
-
-          </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6" data-wow-delay="0.2s">
+              <div class="icon-box">
+                <div class="icon"><i class="fa-solid fa-tv" style="color: #1cec00;"></i></div>
+                <h4 class="title"><a href="https://darren948.github.io/shows/">Movies/Series</a></h4>
+                <p class="description">Watching Movies and Series is my favorite hobby. I tend to spend a lot of my time watching tv shows that could entertain me. </p>
+              </div>
+            </div>
+  
         </div>
-
-      </div>
-    </div>
-    </section><!-- End Projects Section -->
-
+      </section><!-- End Services Section -->
     
-
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container" data-aos="fade-up">
-
-        <div class="contactp">
-          <p>Contact Me</p>
-        </div>
-        <div>
-          <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31572.408357960987!2d124.6266732066326!3d8.445669851659831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32ff8d1cbf1f5c1b%3A0xc93257bab3999af4!2sMacasandig%2C%20Cagayan%20de%20Oro%2C%20Misamis%20Oriental%2C%20Philippines!5e0!3m2!1sen!2sbg!4v1672742365489!5m2!1sen!2sbg" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <div class="row mt-5" data-aos="fade-up">
-          <p class="ppp">Hello! If you want to contact Darren Louis, there are many ways to do so. Here are some few options:</p>
-          <div class="col-lg-4">
-            <div class="info">
-              
-              <div class="address">
-                <i class="fas fa-map-marker-alt"></i>
-                <h4>Location:</h4>
-                <p>Cagayan De Oro City</p>
-              </div>
-
-              <div class="phone">
-                <i class="fa-sharp fa-solid fa-phone-volume"></i>
-                <h4>Call:</h4>
-                <p>09155804125</p>
-              </div>
-
-              <div class="email">
-                <i class="fas fa-envelope"></i>
-                <h4>Email:</h4>
-                <p>uyangurindarrenlouis@gmail.com</p>
-              </div>
-
-            </div>
-
-          </div>
-
-          <div class="col-lg-8 mt-5 mt-lg-0">
-
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                </div>
-              </div>
-              <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-              </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section><!-- End Contact Section -->
-
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
@@ -543,7 +393,7 @@
 <!-- Template Main JS File -->
 <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.1/flickity.pkgd.min.js"></script>
-<script src="assets/js/main.js"></script>
+<script src="assets/js/js.js"></script>
 <!--Skills Carousel-->
 <script src="js/swiper-bundle.min.js"></script>
 </html>
