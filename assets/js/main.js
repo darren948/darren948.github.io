@@ -288,3 +288,7 @@ var swiper = new Swiper(".slide-content", {
       },
   },
 });
+//Initiate galleery lightbox 
+const galleeryLightbox = GLightbox({
+  selector: '.galleery-lightbox'
+});

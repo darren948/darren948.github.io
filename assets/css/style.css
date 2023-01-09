@@ -32,6 +32,7 @@ h6 {
   font-family: "Raleway", sans-serif;
 }
 
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -547,7 +548,7 @@ h2.title{
   display: flex;
   margin-bottom: 100px;
   font-weight: 900;
-  margin-top: 40px;
+  margin-top: 100px;
   margin-bottom: 30px;
   font-size: 40px;
 }
@@ -590,10 +591,21 @@ h2.title{
   max-width: 100%;
   height: auto;
 }
-
+.imgdar {
+  object-fit: cover;
+  border-radius: 10px;
+  border-radius: 21px;
+  border-radius: 25px;
+  max-width: 100%;
+  height: 500px;
+  margin-top: 50px;
+}
 section {
   padding: 60px 0;
   overflow: hidden;
+}
+.shit{
+  color: black;
 }
 .section-title p {
   margin: 0;
@@ -826,6 +838,17 @@ animation: none;
 color: rgb(127, 0, 247);
 cursor: pointer;
 }
+p.piang{
+  color: rgb(89, 0, 141);
+  font-size: clamp(0.9375rem, 0.8418rem + 0.4082vw, 1.25rem);
+  font-weight: 700;
+}
+p.shit{
+  color: white;
+  font-size: clamp(0.9375rem, 0.8418rem + 0.4082vw, 1.25rem);
+  font-weight: 700;
+  text-align: center;
+}
 @media (max-width:991px){
 .flash-text{
   height: 100px;
@@ -845,8 +868,6 @@ cursor: pointer;
   opacity: 1;
 }
 }
-
-
 
 
 /*
@@ -1418,7 +1439,130 @@ h2.name{
     max-width: 100%;
   }
 }
+/*Testimonials*/
+.testimonials {
+  padding: 80px 0;
+  background: url("/assets/images/nini.jpg") no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  margin-top: 50px;
+}
 
+.testimonials::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.testimonials .section-header {
+  margin-bottom: 40px;
+}
+
+.testimonials .testimonials-carousel,
+.testimonials .testimonials-slider {
+  overflow: hidden;
+}
+
+.testimonials .testimonial-item {
+  text-align: center;
+  color: #fff;
+}
+
+.testimonials .testimonial-item .testimonial-img {
+  width: 100px;
+  border-radius: 50%;
+  border: 6px solid rgba(255, 255, 255, 0.15);
+  margin: 0 auto;
+}
+
+.testimonials .testimonial-item h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0 5px 0;
+  color: #fff;
+}
+
+.testimonials .testimonial-item h4 {
+  font-size: 14px;
+  color: #ddd;
+  margin: 0 0 15px 0;
+}
+
+.testimonials .testimonial-item .quote-icon-left,
+.testimonials .testimonial-item .quote-icon-right {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 26px;
+}
+
+.testimonials .testimonial-item .quote-icon-left {
+  display: inline-block;
+  left: -5px;
+  position: relative;
+}
+
+.testimonials .testimonial-item .quote-icon-right {
+  display: inline-block;
+  right: -5px;
+  position: relative;
+  top: 10px;
+}
+
+.testimonials .testimonial-item p {
+  font-style: italic;
+  margin: 0 auto 15px auto;
+  color: #eee;
+}
+
+.testimonials .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.testimonials .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: rgba(255, 255, 255, 0.4);
+  opacity: 0.5;
+}
+
+.testimonials .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #ce51ff;
+  opacity: 1;
+}
+
+@media (min-width: 1024px) {
+  .testimonials {
+    background-attachment: fixed;
+  }
+}
+
+@media (min-width: 992px) {
+  .testimonials .testimonial-item p {
+    width: 80%;
+  }
+}
+
+/*--------------------------------------------------------------
+# Gallery
+--------------------------------------------------------------*/
+.gallery .gallery-item {
+  overflow: hidden;
+  border-right: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+}
+
+.gallery .gallery-item img {
+  transition: all ease-in-out 0.4s;
+}
+
+.gallery .gallery-item:hover img {
+  transform: scale(1.1);
+}
 
 
 /*Contact*/

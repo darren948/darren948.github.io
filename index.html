@@ -25,9 +25,17 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+   <!-- Vendur CSS Files -->
+   <link href="assets/vendur/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+   <link href="assets/vendur/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+   <link href="assets/vendur/boxicons/css/boxicons.min.css" rel="stylesheet">
+   <link href="assets/vendur/glightbox/css/glightbox.min.css" rel="stylesheet">
+   <link href="assets/vendur/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+	<!-- jquery cdn -->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.js"></script>
 
   <!--Javascript File-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
@@ -51,8 +59,8 @@
       
       <ul class="nav-links">
         <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
-        <li><a href="#home"> Home</a></li>
-        <li><a href="#about"> About</a></li>
+        <li><a href="index.html"> Home</a></li>
+        <li><a href="about.html"> About</a></li>
         <li>
           <a href="#skills" class="desktop-item"> Skills <i class="fa-solid fa-square-caret-down"></i></a>
           <input type="checkbox" id="showDrop">
@@ -102,7 +110,7 @@
   <section class="home" id="home">
 
     <div class="hero-slider" data-carousel>
-      <div class="carousel-cell" style="background-image: url(/assets/images/space.gif);">
+      <div class="carousel-cell" style="background-image: url(/assets/images/planets.jpg);">
         <div class="inner">
           <div class="container" data-aos="zoom-in">
           <h2>Hello everyone! I am Darren and</h2>
@@ -118,12 +126,13 @@
         </div>
       </div>
 
-      <div class="carousel-cell" style="background-image: url(/assets/images/planets.jpg);">
+      <div class="carousel-cell" style="background-image: url(/assets/images/wwa.jpg);">
         <div class="inner">
           
         </div>
       </div>
     </div>
+    
     
 </section><!--End Home Section-->
 
@@ -158,24 +167,6 @@
           </div>
         </div>
       </div>
-
-    <!--<div class="clients">
-      <div class="container" data-aos="zoom-in">
-
-        <div class="clients-slider swiper">
-          <p>These are my hobbies:</p>
-          <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><img src="assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-2.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-      </div>-->
-
     <div class="features">
       <div class="container" data-aos="fade-up">
         <div class="row no-gutters">
@@ -383,7 +374,7 @@
                 <h4>Website Code</h4>
                 <p>I made this website but this is just a draft.</p>
                 <div class="portfolio-links">
-                  <a href="/assets/images/pro1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
+                  <a href="/assets/images/pro1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
                   <a href="https://darren1234x.github.io/" title="More Details"><i class="bx bx-link"></i></a>
                 </div>
               </div>
@@ -397,7 +388,7 @@
                 <h4>Fb Code</h4>
                 <p>I Created this Fb code when I was in Shs.</p>
                 <div class="portfolio-links">
-                  <a href="assets/images/fb.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
+                  <a href="assets/images/fb.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
                   <a href="https://darren948.github.io/fbdarren/" title="More Details"><i class="bx bx-link"></i></a>
                 </div>
               </div>
@@ -411,7 +402,7 @@
                 <h4>TV Shows Code</h4>
                 <p>I created this so that I could share my favorite shows</p>
                 <div class="portfolio-links">
-                  <a href="assets/images/tv.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
+                  <a href="assets/images/tv.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
                   <a href="https://darren948.github.io/shows/" title="More Details"><i class="bx bx-link"></i></a>
                 </div>
               </div>
@@ -615,6 +606,13 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
+  <!-- Vendur JS Files -->
+  <script src="assets/vendur/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendur/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendur/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendur/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendur/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendur/php-email-form/validate.js"></script>
 
 </body>
 <!-- Template Main JS File -->

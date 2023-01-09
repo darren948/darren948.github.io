@@ -1,0 +1,96 @@
+/*google font*/
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,800,900&display=swap');
+/*slider*/
+#carouselExampleIndicators{
+	position: relative;
+	height: 100vh;
+	width: 100%;
+}
+#carouselExampleIndicators .carousel-inner{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	background: #000;
+}
+@media (max-width: 600px) {
+    #carouselExampleIndicators .carousel-inner{
+        position: relative;
+        height: 50%;
+    }
+}
+#carouselExampleIndicators .carousel-inner:before{
+	position: absolute;
+	content: '';
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+}
+#carouselExampleIndicators .carousel-inner .carousel-item{
+	position: relative;
+	height: 100%;
+	width:100%;
+	background: url('/assets/images/space.gif');
+	background-size: 100% 100%;
+	background-position: center;
+	background-attachment: fixed;
+}
+#carouselExampleIndicators .carousel-inner .carousel-item:nth-child(2){
+	background: url('/assets/images/night.gif');
+	background-size: 100% 100%;
+	background-position: center;
+	background-attachment: fixed;
+}
+#carouselExampleIndicators .carousel-inner .carousel-item:nth-child(3){
+	background: url('/assets/images/sss.jpg');
+	background-size: 100% 100%;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+#carouselExampleIndicators .carousel-inner .carousel-item .info{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	height: auto;
+	width: 100%;
+	z-index: 1;
+	text-align: center;
+}
+#carouselExampleIndicators .carousel-inner .carousel-item h1{
+	height: auto;
+	color: #fff;
+	width: 100%;
+	z-index: 1;
+	text-align: center;
+	font-size: 5.5em;
+	font-weight: 750;
+}
+#carouselExampleIndicators .carousel-inner .carousel-item p{
+	height: auto;
+	color: #ccc;
+	width: 100%;
+	z-index: 1;
+	text-align: center;
+	font-size: 1.2em;
+	font-weight: 500;
+}
+.feature .image {
+    background: url(/assets/images/kanek.jpg) center center no-repeat;
+    background-size: cover;
+    height: 550px;
+    min-height: 400px;
+    margin-top: 20px;
+}
+@media (max-width: 600px) {
+    .feature .image{
+        width: 100%;
+        height: 100%;
+    }
+}
+p.sh{
+    color: rgb(119, 0, 255);
+    font-weight: 700;
+    font-size: clamp(0.625rem, 0.338rem + 1.2245vw, 1.5625rem);
+}
