@@ -67,38 +67,19 @@
       <ul class="nav-links">
         <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
         <li><a href="index.html"> Home</a></li>
-        <li><a href="about.html"> About</a></li>
-        <li><a href="skills.html"> Skills</a></li>
         <li>
-          <a href="projects.html" class="desktop-item">Projects <i class="fa-solid fa-square-caret-down"></i></a>
-          <input type="checkbox" id="showMega">
-          <label for="showMega" class="mobile-item"> Projects <i class="fa-solid fa-square-caret-down"></i></label>
-          <div class="mega-box">
-            <div class="content">
-              <div class="row">
-                <img src="/assets/images/wew.png" alt="logo">
-              </div>
-              <div class="row">
-                <ul class="mega-links">
-                  <header><li><a href="projects.html">My Projects</a></li></header>
-                  <li><a href="#project">1. Website</a></li>
-                </ul>
-              </div>
-              <div class="row">
-                <ul class="mega-links">
-                  <header> </header>
-                  <li><a href="#project">2. Fb Code</a></li>
-                </ul>
-              </div>
-              <div class="row">
-                <ul class="mega-links">
-                  <header> </header>
-                  <li><a href="#project">3. Shows Code</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
+          <a href="about.html" class="desktop-item"> About <i class="fa-solid fa-square-caret-down"></i></a>
+          <input type="checkbox" id="showDrop">
+          <label for="showDrop" class="mobile-item"> About <i class="fa-solid fa-square-caret-down"></i></label>
+          <ul class="drop-menu">
+            <li><a href="#about">Introduction</a></li>
+            <li><a href="#gallery">My Gallery</a></li>
+            <li><a href="#feature">Features</a></li>
+            <li><a href="#favorites">My Favorites</a></li>
+          </ul>
         </li>
+        <li><a href="skills.html"> Skills</a></li>
+        <li><a href="projects.html">Projects </a></li>
         <li><a href="contact.html"> Contacts</a></li>
       </ul>
       <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
@@ -235,19 +216,18 @@
             <div class="col-lg-3 col-md-4">
               <div class="gallery-item">
                 <a href="assets/images/walking.mp4" class="galleery-lightbox" data-gallery="gallery-item">
-                  <img src="assets/images/walking.jpg" alt="" class="img-fluid">
+                  <img src="assets/images/walking.jpg" alt="" class="img-fluid" >
                 </a>
               </div>
             </div>
   
-            
           </div>
           </div>
-  
         </div>
-        <div class="feature">
+        <div class="feature" id="feature">
           <div class="container" data-aos="fade-up">
             <div class="row no-gutters">
+              <p class="s">FEATURES</p>
               <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start" data-aos="fade-right" data-aos-delay="100"></div>
               <div class="col-xl-7 ps-0 ps-lg-5 pe-lg-1 d-flex align-items-stretch" data-aos="fade-left" data-aos-delay="100">
                 <div class="content d-flex flex-column justify-content-center">
@@ -283,7 +263,8 @@
         </div>
       </section><!-- End Gallery Section -->
       <!-- ======= Testimonials Section ======= -->
-      <div class="container" data-aos="zoom-in">
+      <div class="container" data-aos="zoom-in" id="favorites">
+        <p class="sh">FAVORITES</p>
     <section id="testimonials" class="testimonials">
         <div class="container" data-aos="zoom-in">
             <p class="shit">THESE ARE MY FAVORITE CHARACTERS IN FICTION.</p>
@@ -366,7 +347,7 @@
     <section>
       <div class="container" data-aos="fade-up">
 			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <p class="sh">I also love watching space and universe because it makes me feel relaxed.</p>
+        <p class="sh">Watching space & universe is also my favorite, it makes me feel relaxed.</p>
 			  <ol class="carousel-indicators">
 			    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
 			    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>

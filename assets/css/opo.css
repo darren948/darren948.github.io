@@ -85,7 +85,6 @@
     background-size: cover;
     height: 550px;
     min-height: 400px;
-    margin-top: 20px;
 }
 @media (max-width: 600px) {
     .feature .image{
@@ -94,6 +93,12 @@
     }
 }
 p.sh{
+    color: rgb(119, 0, 255);
+    font-weight: 700;
+    font-size: clamp(1.25rem, 1.0587rem + 0.8163vw, 1.875rem);
+}
+p.s{
+    margin-top: 70px;
     color: rgb(119, 0, 255);
     font-weight: 700;
     font-size: clamp(1.25rem, 1.0587rem + 0.8163vw, 1.875rem);
