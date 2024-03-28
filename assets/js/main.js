@@ -246,7 +246,7 @@ var typed = new Typed(".texting", {
   loop: true,
 });
 var typed = new Typed(".thanks", {
-  strings: ["Thank you for visting!!!!"],
+  strings: ["Thank you for visiting!!!"],
   typeSpeed: 100,
   backSpeed: 60,
   loop: true,
